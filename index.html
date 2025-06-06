@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mumbai Indians - IPL Champions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="AUD-20250606-WA0001 (1).mp3" type="audio/mpeg" />
+  </audio>
+
+  <div id="popup-overlay">
+    <h2>Are you a Mumbai Indians Fan? 💙🏆</h2>
+    <button onclick="acceptFan()">Yes, Forever 💙</button>
+    <button onclick="declineFan()">No, I'm Not</button>
+  </div>
+
+  <div id="main-content">
+    <header>
+      <h1>Mumbai Indians - The Real Kings of IPL 💙</h1>
+      <p>Champions of IPL 5 times — "Duniya Hila Denge Hum!"</p>
+    </header>
+
+    <div class="hero">
+      <img src="ipl-trophy.webp" alt="MI Trophy" />
+    </div>
+
+    <h2 class="section-title">Iconic Moments</h2>
+    <div class="gallery">
+      <img src="rohit-sharma-stand.webp" alt="Rohit with Trophy" />
+      <img src="fans parade.jpg" alt="Fans Celebration" />
+      <img src="final fans.jpg" alt="Team Roars" />
+      <img src="impact player (2).jpg" alt="Wankhede Stadium" />
+      <img src="mi.jpg" alt="MI Paltan Energy" />
+      <img src="rohitsharma.jpg" alt="Emotional Moment" />
+    </div>
+
+    <h2 class="section-title">Top Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Captain Cool: Rohit</h3>
+        <p>Rohit Sharma lifts the trophy once again — calm, composed, legendary.</p>
+      </div>
+      <div class="card">
+        <h3>MI Paltan Roars</h3>
+        <p>The fans turned blue skies into thunder. Your energy made this win historic!</p>
+      </div>
+      <div class="card">
+        <h3>Epic Finale</h3>
+        <p>A masterclass by MI! The finale will be remembered for years to come.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with 💙 by <strong>Varun Panwar</strong> | MI Forever 💙</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function acceptFan() {
+      document.getElementById('popup-overlay').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      alert('Welcome 💙 MI Paltan!');
+    }
+
+    function declineFan() {
+      document.getElementById('popup-overlay').innerHTML = "<h2>Thank you 🙏<br>This website is only for MI Fans!</h2>";
+      document.getElementById('bg-music').pause();
+    }
+  </script>
+</body>
+</html>
